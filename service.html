@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Offered - IT Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">MyPortfolio</div>
+            <nav class="nav desktop-nav">
+                <a href="/update.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="project.html">Projects</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("show-menu");
+            hamburger.classList.toggle("open");
+        });
+    </script>
+
+    <!-- HERO SECTION -->
+    <section class="hero services-hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Services <span>Offered</span></h1>
+                <p>Explore a range of professional services designed to deliver
+                     effective digital solutions and measurable results. </p>
+            </div>
+            <div class="hero-image animated-image">
+              <!--  <img src="../images/bg1.jpg" alt="About Me Image" width="auto" height="150">-->
+            </div>
+        </div>
+    </section><br>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+        <div class="container">
+
+            <!-- Google Maps Service -->
+            <div class="service">
+                <h2>Google Maps / Business Profile</h2>
+                <div class="packages">
+                    <div class="package">
+                        <h3>Basic Package</h3>
+                        <p>- Perfect for business just getting started on google maps</p>
+                        <p>. Adding your business to Google maps</p>
+                        <p>. Veryfying your business real time location</p>
+                        <p>. Upload of 6 photos of your business</p>
+                        <p> Value: Your business will appear on google maps so customer can easyly find you.</p>
+                        <p class="price">KES 5,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Standard Package</h3>
+                        <p>- Ideal for small business that want to stay fresh and visible</p>
+                        <p>. Adding and veryfying your business on google maps</p>
+                        <p>. Upload of upto 10 photos</p>
+                        <p>. 3 photo update per month for 3 months</p>
+                        <p>Value: Keep your business profile updated with new photo attracting more customers.</p>
+                        <p class="price">KES 10,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Premium Package</h3>
+                        <p>- For business that want consistent updates and maximum visibility</p>
+                        <p>. Adding and veryfying your business on google maps</p>
+                        <p>. Upload of upto 15 photos</p>
+                        <p>. 4 photo update every month for 6 months</p>
+                        <p>. Minor business info updates if needed</p>
+                        <p>Value: Your google maps listening stay active and proffessional helping more customers find and trust your business.</p>
+                        <p class="price">KES 15,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Service -->
+            <div class="service">
+                <h2>Local SEO Service</h2>
+                <div class="packages">
+                    <div class="package">
+                        <h3>Basic SEO</h3>
+                        <p>Optimize Google Maps listing</p>
+                        <p>Basic local SEO setup</p>
+                        <p class="price">KES 12,000 – 18,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Standard SEO</h3>
+                        <p>GBP optimization + 10 photos</p>
+                        <p>1 photo update per month for 3 months, local SEO on website</p>
+                        <p class="price">KES 20,000 – 30,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Premium SEO</h3>
+                        <p>GBP + website optimization</p>
+                        <p>Monthly updates for 6 months, review monitoring, content optimization</p>
+                        <p class="price">KES 35,000 – 50,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Design Service -->
+            <div class="service">
+                <h2>Web Design (Static Sites)</h2>
+                <div class="packages">
+                    <div class="package">
+                        <h3>Basic</h3>
+                        <p>1–3 pages, simple responsive design</p>
+                        <p>Homepage + contact + 1 info page</p>
+                        <p class="price">KES 10,000 – 15,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Standard</h3>
+                        <p>4–6 pages, custom graphics</p>
+                        <p>Contact form, responsive, basic hosting setup</p>
+                        <p class="price">KES 20,000 – 35,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Premium</h3>
+                        <p>7–10 pages, custom design, gallery/portfolio</p>
+                        <p>Basic SEO, email contact form, basic maintenance</p>
+                        <p class="price">KES 40,000 – 60,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CCTV Installation Service -->
+            <div class="service">
+                <h2>CCTV Installation Service</h2>
+                <div class="packages">
+                    <div class="package">
+                        <h3>Home Basic</h3>
+                        <p>2–4 cameras, HD cameras, DVR</p>
+                        <p>Basic installation</p>
+                        <p class="price">KES 10,000 – 20,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Office Standard</h3>
+                        <p>4–8 cameras, HD cameras, DVR</p>
+                        <p>Medium installation, motion alerts</p>
+                        <p class="price">KES 30,000 – 40,000</p>
+                    </div>
+                    <div class="package">
+                        <h3>Business Premium</h3>
+                        <p>8–16 cameras, high-end cameras, NVR/DVR</p>
+                        <p>Cloud storage, remote access</p>
+                        <p class="price">KES 70,000 – 150,000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h3>MyPortfolio</h3>
+                <p>Your trusted IT partner for web development, SEO, and IT solutions.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@myportfolio.com</p>
+                <p>Phone: +254 700 000 000</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
