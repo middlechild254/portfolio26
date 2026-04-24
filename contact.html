@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - IT Portfolio</title>
+    <link rel="stylesheet" href="/css/other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">MyPortfolio</div>
+            <nav class="nav desktop-nav">
+                <a href="/update.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="project.html">Projects</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="project.html">Contact</a>
+        </div>
+    </header>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("show-menu");
+            hamburger.classList.toggle("open");
+        });
+    </script>
+
+    <!-- HERO -->
+    <section class="hero contact-hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Contact <span>Me</span></h1>
+                <p>Have a project or idea in mind? Kindly complete the form 
+                    below, and I will get back to you promptly to discuss how 
+                    we can bring your vision to life.</p>
+            </div>
+            <div class="hero-image animated-image">
+                <img src="../images/bg1.jpg" alt="About Me Image" width="200" height="200">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="section contact-form">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="formMessage" style="margin-top:15px;color:green;"></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h3>MyPortfolio</h3>
+                <p>Your trusted IT partner for web development, SEO, and IT solutions.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@myportfolio.com</p>
+                <p>Phone: +254 700 000 000</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+ <script>
+    const form = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        // Your WhatsApp number
+        const phoneNumber = "254734272801";
+
+        // Construct message text
+        const textMessage =
+            "Hello, my name is " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Subject: " + subject + "\n" +
+            "Message: " + message;
+
+        // Encode message properly for URL
+        const encodedMessage = encodeURIComponent(textMessage);
+
+        // Final WhatsApp link
+        const whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+
+        // Open WhatsApp chat
+        window.open(whatsappURL, "_blank");
+
+        // Display confirmation to user
+        formMessage.textContent = `Thank you ${name}! Your message has been sent successfully.`;
+        form.reset();
+    });
+</script>
+
+
+</body>
+
+</html>
