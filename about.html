@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - IT Portfolio</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container header-content">
+        <div class="logo">MyPortfolio</div>
+        <nav class="nav desktop-nav">
+            <a href="/update.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="project.html">Projects</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="project.html">Contact</a>
+    </div>
+</header>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+    hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show-menu");
+        hamburger.classList.toggle("open");
+    });
+</script>
+
+<!-- HERO -->
+<section class="hero about-hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1>About <span>Me</span></h1>
+            <p>I am a results-driven IT Specialist focused on building modern web solutions
+                 and enhancing business visibility online. My expertise includes
+                  web development, search engine optimization (SEO), Google Maps optimization, and 
+                  IT support services. I am committed to helping businesses grow by delivering efficient, scalable, and 
+                  high-quality digital solutions that improve performance and customer reach</p>
+        </div>
+        <div class="hero-image animated-image">
+            <img src="../images/bg1.jpg" alt="About Me Image" width="300" height="300">
+        </div>
+    </div>
+</section><br>
+
+<!-- MISSION SECTION -->
+<section class="section mission">
+    <div class="container">
+        <h2 class="section-title">My Mission</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-rocket fa-2x"></i>
+                <h3>Innovative Solutions</h3>
+                <p>Deliver modern and effective IT solutions that drive business growth.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users fa-2x"></i>
+                <h3>Customer Success</h3>
+                <p>Ensure clients achieve their goals through reliable IT services.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-clock fa-2x"></i>
+                <h3>Efficiency</h3>
+                <p>Provide timely and efficient solutions that save time and resources.</p>
+            </div>
+        </div>
+    </div>
+</section><br>
+
+<!-- CORE VALUES SECTION -->
+<section class="section values">
+    <div class="container">
+        <h2 class="section-title">Core Values</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-handshake fa-2x"></i>
+                <h3>Integrity</h3>
+                <p>Maintain honesty and transparency in all professional dealings.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-lightbulb fa-2x"></i>
+                <h3>Innovation</h3>
+                <p>Bring creative ideas and innovative solutions to every project.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users-cog fa-2x"></i>
+                <h3>Customer Focus</h3>
+                <p>Always prioritize client satisfaction and tailored solutions.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-award fa-2x"></i>
+                <h3>Quality</h3>
+                <p>Deliver high-quality IT services that exceed expectations.</p>
+            </div>
+        </div>
+    </div>
+</section><br>
+
+<!-- WHY CHOOSE ME -->
+<section class="section why-choose">
+    <div class="container">
+        <h2 class="section-title">Why Choose Me</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-cogs fa-2x"></i>
+                <h3>Technical Expertise</h3>
+                <p>Years of experience in web development, SEO, and IT solutions.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-thumbs-up fa-2x"></i>
+                <h3>Professionalism</h3>
+                <p>Dedicated to delivering reliable and professional services.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-star fa-2x"></i>
+                <h3>Results Driven</h3>
+                <p>Focused on achieving measurable results for all clients.</p>
+            </div>
+
+               <div class="card">
+                <i class="fas fa-star fa-2x"></i>
+                <h3>Results Driven</h3>
+                <p>Focused on achieving measurable results for all clients.</p>
+            </div>
+        </div>
+    </div>
+</section><br>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-about">
+            <h3>MyPortfolio</h3>
+            <p>Your trusted IT partner for web development, SEO, and IT solutions.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: info@myportfolio.com</p>
+            <p>Phone: +254 111780119</p>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
